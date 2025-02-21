@@ -1,0 +1,150 @@
+h1{
+ size: 24px; 
+}
+h2{
+  size: 24px;}
+h3{
+    size: 24px;
+}
+h4{
+    size:24px;
+}
+.space-y-1{
+margin-top: 1rem;
+}
+.space-y-2{
+    margin-top: 2rem;
+}
+.background-color-header{
+    background-color: grey;
+}
+.container{
+    padding: 100px;
+}
+footer{
+    background-color: grey;
+    justify-content: center;
+    p{
+        justify-self: center;
+    }
+}
+.flex{
+    display: flex;
+}
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.dropdown{
+    position: fixed;
+    /*background-color: black;
+    /*inset: 0;*/
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.itemDropdown{
+    position: absolute;
+    padding: 5px;
+    background-color: white;
+    right: 0;
+    z-index: 2;
+    margin-top: 2;
+    border-radius: 6px;
+}
+.product-layout{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 8;
+}
+.Cartitembox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.tracker{
+    font-size: 5px;
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+}
+.product-img{
+    object-fit: cover;
+}
+.contactformula{
+    padding: 2rem;
+  
+}
+.rightshoppingcart{
+   display: flex;
+   gap: 3px;
+}
+.contactcontainer{
+    padding:2rem;
+    justify-self: center;
+    border: 10px solid black;
+}
+.productCard{
+    width: 100%;
+}
+.mediacontainer{
+    min-height: 100vh;
+}
+.linkbox{
+    overflow: hidden;
+}
+.titletext{
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.productTextbox{
+    color: black;
+}
+.checkoutdesc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cartitemcenter{
+    display: flex;
+    align-items: center;
+}
+.product-img-checkout{
+    width: 70px;
+}
+.cartitemimg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.smalltext{
+    font-size: 12px;
+}
+nav {
+ 
+    padding: 10px 20px;
+    /*background-color: #333;
+    color: white;*/
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .rightnav{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+  }
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
