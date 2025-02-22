@@ -68,10 +68,12 @@ footer{
 
 }
 .tracker{
-    font-size: 5px;
+    font-size: 15px;
     position: absolute;
     background-color: red;
     border-radius: 50%;
+    right: auto;
+    top: auto;
 }
 .product-img{
     object-fit: cover;
