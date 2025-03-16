@@ -8,6 +8,7 @@ const Contacts=()=> {
     const [submissionStatus,setSubmissionStatus]=useState(null)
     const [formerrors, setformerrors] = useState({})
     const handleChange=(e)=>{
+        validate()
         setFormData(data=>{
             return{...data,
                 [e.target.id]: e.target.value
@@ -37,11 +38,13 @@ const Contacts=()=> {
         } catch (error) {
             console.log(error.message)
             setSubmissionStatus("error");
+            console.log(submissionStatus)
         }
     }
     const handleSubmit=(e)=>{
         e.preventDefault()
         setSubmissionStatus(null);
+        console.log(submissionStatus)
         if (validate()) {
             Contactmessage(formData.firstname,formData.email,formData.message)
         }
@@ -49,23 +52,17 @@ const Contacts=()=> {
     const validate=()=>{
         let errors={};
         if(formData.firstname.trim()===''){
-            setformerrors(err=>({
-                ...err,
-                firstname:'You need to enter a firstname'
-            }))
-        }
+                errors.firstname='You need to enter a firstname'
+            }
+        
         if(formData.email.trim()===''){
-            setformerrors(err=>({
-                ...err,
-                epostaddress:'You need to enter a epostaddress'
-            }))
-        }
+                errors.epostaddress='You need to enter a epostaddress'
+            }
+        
         if(formData.message.trim()===''){
-            setformerrors(err=>({
-                ...err,
-                message:'You need to enter a message'
-            }))
-        }
+                errors.message='You need to enter a message'
+            }
+        
         setformerrors(errors);
     return Object.keys(errors).length === 0;
     }

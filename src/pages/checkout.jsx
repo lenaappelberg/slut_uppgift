@@ -3,7 +3,7 @@ import CartItems from '../components/cartItems'
 
  const Checkout = () => {
   return (
-    <div Checkout container>
+    <div  className='container'>
       <CartItems isCheckoutPage></CartItems>
     </div>
   )

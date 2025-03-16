@@ -10,6 +10,7 @@ import Rootlayout from './layout/rootlayout';
 import { Provider } from 'react-redux';
 import store from './store';
 import Checkout from './pages/checkout';
+import Kopa from './pages/Kopa';
 const router= createBrowserRouter([{
   path:'/',
   element:<Rootlayout/>,
@@ -29,6 +30,10 @@ const router= createBrowserRouter([{
      {
       path:'contact',
       element:<Contacts/>
+     },
+     {
+      path:'kopa',
+      element:<Kopa/>
      }
   ]
   }
